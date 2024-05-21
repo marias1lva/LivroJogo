@@ -26,7 +26,7 @@ Para que o personagem principal possa escolher o rumo que sua história, o jogo 
 
 ## Como jogar
 Para jogar o jogo clone o repositório em seu computador com o comando abaixo:
-```powershell
+```bash
 git clone https://github.com/marias1lva/LivroJogo.git
 ```
 Após, abra o repositório em uma IDE de sua preferência, e rode o programa. Suas escolhas e a história do jogo são feitas pelo console.
