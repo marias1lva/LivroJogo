@@ -26,7 +26,7 @@ Para que o personagem principal possa escolher o rumo que sua história, o jogo 
 
 ## Como jogar
 Para jogar o jogo clone o repositório em seu computador com o comando abaixo:
-```bash
+```powershell
 git clone https://github.com/marias1lva/LivroJogo.git
 ```
 Após, abra o repositório em uma IDE de sua preferência, e rode o programa. Suas escolhas e a história do jogo são feitas pelo console.
@@ -37,7 +37,8 @@ O objetivo é guiar Kaito através de suas escolhas e ver onde o destino o leva,
 
 ### Dado da Sorte
 No código, há um trecho que simula o uso de um dado de sorte para determinar o resultado de uma situação.
-```bash
+
+```cpp
 int resultado = rand() % 10 + 1;
 cout << "Um vidente local diz que você vencerá se os dados mostrarem números pares. Seu resultado é: " << resultado << endl << endl;
 if (resultado % 2 == 0) {
@@ -48,6 +49,7 @@ if (resultado % 2 == 0) {
     // código para a situação de falha
 }
 ```
+
 A função rand() gera um número aleatório entre 0 e RAND_MAX, que é uma constante definida pela implementação. O operador % é usado para obter o resto da divisão desse número por 10, então o resultado será um número entre 0 e 9. Depois, é adicionado 1 ao resultado anterior para garantir que o número gerado seja entre 1 e 10, em vez de 0 e 9.\
 Por fim, verifica se o número gerado é par. Se for par, o "DESTINO LHE SORRIU!", indicando um resultado positivo. Caso contrário, a situação é tratada como uma falha, indicando que o "FIM DO EXÉRCITO HASHIRA! O DESTINO LHE DISSE!".\
 O dado de sorte é usado para introduzir um elemento de aleatoriedade e incerteza no jogo, onde o resultado pode influenciar o rumo da história, adicionando um elemento emocionante de sorte e imprevisibilidade para o jogador.
